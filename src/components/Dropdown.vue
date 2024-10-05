@@ -1,16 +1,17 @@
 <template>
     <div class="relative" @mouseenter="isOpen = true" @mouseleave="isOpen = false">
       <button>collections</button>
-      <ul class="fixed flex flex-col top-100 bg-white" v-if="isOpen">
-        <li class="p-2" v-for="collection of collection.collections">
+      <ol class="fixed flex flex-col top-100 bg-white" v-if="isOpen">
+        <li class="p-2 list-disc" v-for="collection of content.collections">
           <router-link
             :to="`/collections/${collection.handle}`"
             active-class="underline"
           >
             {{ collection.title }}
+              
           </router-link>
         </li>
-      </ul>
+      </ol>
     </div>
   </template>
   
@@ -20,11 +21,26 @@
   export default {
     setup() {
       const isOpen = ref(false)
-      const collection = []
+      const content = ref({
+        collections: [
+          {
+            title: 'F00B4rBa7',
+            handle: 'foobar',
+          },
+          {
+            title: 'F00B4rBa7',
+            handle: 'foobar',
+          },
+          {
+            title: 'F00B4rBa7',
+            handle: 'foobar',
+          }
+        ]
+      })
   
       return {
         isOpen,
-        collection
+        content
       }
     }
   }

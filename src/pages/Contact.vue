@@ -1,5 +1,5 @@
 <template>
-    <hello msg="$c4MM1N 3l DIA" />
+    <hello msg="CONTACT MEEEEE3" />
 </template>
   
 <script setup>

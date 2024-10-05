@@ -5,10 +5,10 @@ import {
   } from 'vue-router'
   import Home from './pages/Home.vue'
   import Find from './pages/Find.vue'
-  import Contact from './pages/Find.vue'
-  import About from './pages/Find.vue'
-  import Code from './pages/Find.vue'
-  import Collections from './pages/Find.vue'
+  import Contact from './pages/Contact.vue'
+  import About from './pages/About.vue'
+  import Code from './pages/Code.vue'
+  import Collections from './pages/Collections.vue'
   
   const routes = [
     {
