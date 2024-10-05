@@ -5,7 +5,7 @@
         <suspense>
           <component :is="Component" />
           <template #fallback>
-            <loader></loader>
+            <loading></loading>
           </template>
         </suspense>
       </router-view>
@@ -14,7 +14,7 @@
   
   <script setup>
   import { useRoute } from 'vue-router'
-  import Loader from './components/Loader.vue'
+  import Loading from './components/Loading.vue'
   import NavBar from './components/NavBar.vue'
   
   const route = useRoute()
