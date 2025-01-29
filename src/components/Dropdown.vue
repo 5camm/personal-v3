@@ -1,8 +1,8 @@
 <template>
     <div class="relative" @mouseenter="isOpen = true" @mouseleave="isOpen = false">
       <button>collections</button>
-      <ol class="fixed flex flex-col top-100 bg-white" v-if="isOpen">
-        <li class="p-2 list-disc" v-for="collection of content.collections">
+      <ul class="fixed bg-gray-200 flex flex-col top-100" v-if="isOpen">
+        <li class="py-2 px-4 list-none" v-for="collection of content.collections">
           <router-link
             :to="`/collections/${collection.handle}`"
             active-class="underline"
@@ -11,7 +11,7 @@
               
           </router-link>
         </li>
-      </ol>
+      </ul>
     </div>
   </template>
   

@@ -1,6 +1,6 @@
 <template>
     <nav-bar></nav-bar>
-    <main class="min-h-screen flex flex-col pt-16 px-2">
+    <main class="min-h-screen flex flex-col pt-16 px-2 font-mono bg-blue-300">
       <router-view :key="route.fullPath" v-slot="{ Component }">
         <suspense>
           <component :is="Component" />
