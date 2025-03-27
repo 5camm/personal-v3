@@ -1,13 +1,13 @@
 <template>
     <div class="relative" @mouseenter="isOpen = true" @mouseleave="isOpen = false">
-      <button>collections</button>
-      <ul class="fixed bg-gray-200 flex flex-col top-100" v-if="isOpen">
-        <li class="py-2 px-4 list-none" v-for="collection of content.collections">
+      <button>projects</button>
+      <ul class="fixed bg-green-200 text-gray-800 flex flex-col top-100 rounded py-2" v-if="isOpen">
+        <li class="py-2 px-4 list-none" v-for="project of content.projects">
           <router-link
-            :to="`/collections/${collection.handle}`"
+            :to="`/projects/${project.route}`"
             active-class="underline"
           >
-            {{ collection.title }}
+            {{ project.title }}
               
           </router-link>
         </li>
@@ -22,18 +22,18 @@
     setup() {
       const isOpen = ref(false)
       const content = ref({
-        collections: [
+        projects: [
           {
-            title: 'F00B4rBa7',
-            handle: 'foobar',
+            title: 'mesh',
+            route: 'foobar',
           },
           {
-            title: 'F00B4rBa7',
-            handle: 'foobar',
+            title: 'givii',
+            route: 'foobar',
           },
           {
-            title: 'F00B4rBa7',
-            handle: 'foobar',
+            title: 'greenbot',
+            route: 'foobar',
           }
         ]
       })

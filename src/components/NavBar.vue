@@ -1,5 +1,5 @@
 <template>
-    <nav class="fixed h-16 flex items-center w-full bg-gray-200">
+    <nav class="fixed h-16 flex items-center w-full bg-gray-800">
       <router-link
         to="/"
         class="px-2 font-bold transform transition-all"
@@ -8,7 +8,7 @@
       >
         <span class="p-2 text-blue-600">$cam</span>
       </router-link>
-      <ul class="flex justify-around w-full font-sans text-sm text-gray-700">
+      <ul class="flex justify-around w-full font-sans text-sm text-gray-200">
         <li>
           <router-link to="/find" active-class="underline">find</router-link>
         </li>

@@ -8,7 +8,7 @@ import {
   import Contact from './pages/Contact.vue'
   import About from './pages/About.vue'
   import Code from './pages/Code.vue'
-  import Collections from './pages/Collections.vue'
+  import Projects from './pages/Projects.vue'
   
   const routes = [
     {
@@ -37,9 +37,9 @@ import {
       component: Code
     },
     {
-      path: '/collections',
-      name: 'Collections',
-      component: Collections
+      path: '/projects',
+      name: 'Projects',
+      component: Projects
     },
   ]
   
