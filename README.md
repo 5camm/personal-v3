@@ -38,6 +38,7 @@ yarn serve
 
 _ie. `:hammer: shop listings`_
 
+- upgrade = :arrow_up:
 - wip = :hammer:
 - built = :heavy_check_mark:
 - fix = :bug:
@@ -47,6 +48,6 @@ _ie. `:hammer: shop listings`_
 - change = :nut_and_bolt:
 - refactor = :pencil:
 - chore = :wrench:
-- documentation = :book:
+- document = :book:
 - styles = :art:
 - cleanup = :broom:
